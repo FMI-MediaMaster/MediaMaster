@@ -1,6 +1,12 @@
 import { Request, Response } from 'express';
 import { BaseController } from '@FMI-MediaMaster/express-crud-router';
+import { createClient } from '@supabase/supabase-js'
+import { Database } from '../database.types'
+import config from '@FMI-MediaMaster/load-dotenv';
 import UserService from '@services/user';
+
+// TODO: use
+const supabase = createClient<Database>(config.SUPABASE_URL, config.SUPABASE_KEY)
 
 export default class UserController extends BaseController {
     private service = new UserService();
