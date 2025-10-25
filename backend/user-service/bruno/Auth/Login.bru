@@ -1,11 +1,11 @@
 meta {
-  name: Read Users
+  name: Login
   type: http
-  seq: 2
+  seq: 3
 }
 
-get {
-  url: {{url}}/users
+post {
+  url: {{url}}/auth/login
   body: none
   auth: inherit
 }
