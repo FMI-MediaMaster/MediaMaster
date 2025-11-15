@@ -4,11 +4,10 @@
 Media Master
   ├─ backend
   │    ├─ external-services
-  │    │    ├─ metadata
+  │    │    ├─ <strong>metadata :8100</strong>
   │    │    │    ├─ <a href="https://github.com/FMI-MediaMaster/TMDB-Service">TMDB</a>  
-  │    │    │    ├─ <strong>:8103 => <a href="https://github.com/FMI-MediaMaster/PCGW-Service">PCGW</a> </strong>
-  │    │    │    ├─ <a href="https://github.com/FMI-MediaMaster/Goodreads-Service">Goodreads</a>
-  │    │    │    └─ <a href="https://github.com/FMI-MediaMaster/Anilist-Service">Anilist</a>
+  │    │    │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/PCGW-Service">PCGW</a>    :8103</strong>
+  │    │    │    └─ <strong><a href="https://github.com/FMI-MediaMaster/Anilist-Service">Anilist</a> :8106</strong>
   │    │    └─ import
   │    ├─ <a href="https://github.com/FMI-MediaMaster/User-Service">user-service</a>
   │    └─ media-service
