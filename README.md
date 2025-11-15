@@ -7,8 +7,10 @@ Media Master
   │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/Media-Service">media-service</a> :8002</strong>
   │    └─ external-services
   │         ├─ <strong>metadata :8100</strong>
-  │         │    ├─ <a href="https://github.com/FMI-MediaMaster/TMDB-Service">TMDB</a>  
+  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/IGDB-Service">IGDB</a>    :8101</strong>
+  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/HLTB-Service">HLTB</a>    :8102</strong>
   │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/PCGW-Service">PCGW</a>    :8103</strong>
+  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/TMDB-Service">TMDB</a>    :8105</strong>
   │         │    └─ <strong><a href="https://github.com/FMI-MediaMaster/Anilist-Service">Anilist</a> :8106</strong>
   │         └─ <strong>import    :8200</strong>
   └─ frontend
