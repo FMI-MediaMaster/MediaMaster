@@ -1,4 +1,4 @@
-# Architecture
+# 📁 Architecture
 
 <pre>
 Media Master
@@ -15,7 +15,7 @@ Media Master
   └─ frontend
 </pre>
 
-## Setup
+## 🛠️ Setup
 1. Clone the repository
 ```sh
   git clone --recurse-submodules https://github.com/FMI-MediaMaster/MediaMaster.git
