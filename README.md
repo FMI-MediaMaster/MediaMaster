@@ -7,11 +7,11 @@ Media Master
   │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/Media-Service">media-service</a> :8002</strong>
   │    └─ external-services
   │         ├─ <strong>metadata :8100</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/IGDB-Service">IGDB</a>    :8101</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/HLTB-Service">HLTB</a>    :8102</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/PCGW-Service">PCGW</a>    :8103</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/TMDB-Service">TMDB</a>    :8105</strong>
-  │         │    └─ <strong><a href="https://github.com/FMI-MediaMaster/Anilist-Service">Anilist</a> :8106</strong>
+  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/IGDB-Service">igdb</a>    :8101</strong>
+  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/HLTB-Service">hltb</a>    :8102</strong>
+  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/PCGW-Service">pcgw</a>    :8103</strong>
+  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/TMDB-Service">tmdb</a>    :8105</strong>
+  │         │    └─ <strong><a href="https://github.com/FMI-MediaMaster/Anilist-Service">anilist</a> :8106</strong>
   │         └─ <strong>import    :8200</strong>
   └─ frontend
 </pre>
@@ -19,5 +19,5 @@ Media Master
 ## 🛠️ Setup
 1. Clone the repository
 ```sh
-  git clone --recurse-submodules https://github.com/FMI-MediaMaster/MediaMaster.git
+git clone --recurse-submodules https://github.com/FMI-MediaMaster/MediaMaster.git
 ```

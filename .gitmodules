@@ -1,3 +1,12 @@
 [submodule "backend/user-service"]
 	path = backend/user-service
 	url = https://github.com/FMI-MediaMaster/User-Service
+[submodule "backend/external-services/metadata/tmdb"]
+	path = backend/external-services/metadata/tmdb
+	url = https://github.com/FMI-MediaMaster/TMDB-Service.git
+[submodule "backend/external-services/metadata/anilist"]
+	path = backend/external-services/metadata/anilist
+	url = https://github.com/FMI-MediaMaster/Anilist-Service.git
+[submodule "backend/external-services/metadata/pcgw"]
+	path = backend/external-services/metadata/pcgw
+	url = https://github.com/FMI-MediaMaster/PCGW-Service.git
