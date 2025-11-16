@@ -10,3 +10,6 @@
 [submodule "backend/external-services/metadata/pcgw"]
 	path = backend/external-services/metadata/pcgw
 	url = https://github.com/FMI-MediaMaster/PCGW-Service.git
+[submodule "backend/external-services/metadata/hardcover"]
+	path = backend/external-services/metadata/hardcover
+	url = https://github.com/FMI-MediaMaster/Hardcover-Service.git
