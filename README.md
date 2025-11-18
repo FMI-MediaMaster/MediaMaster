@@ -3,21 +3,21 @@
 <pre>
 Media Master
   ├─ backend
-  │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/User-Service">user-service</a>  :8001</strong>
-  │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/Media-Service">media-service</a> :8002</strong>
+  │    ├─ <strong>8001: <a href="https://github.com/FMI-MediaMaster/User-Service">user-service</a></strong>
+  │    ├─ <strong>8002: <a href="https://github.com/FMI-MediaMaster/Media-Service">media-service</a></strong>
   │    └─ external-services
-  │         ├─ <strong>metadata :8100</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/IGDB-Service">igdb</a>      :8101</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/HLTB-Service">hltb</a>      :8102</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/PCGW-Service">pcgw</a>      :8103</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/Hardcover-Service">hardcover</a> :8104</strong>
-  │         │    ├─ <strong><a href="https://github.com/FMI-MediaMaster/TMDB-Service">tmdb</a>      :8105</strong>
-  │         │    └─ <strong><a href="https://github.com/FMI-MediaMaster/Anilist-Service">anilist</a>   :8106</strong>
-  │         └─ <strong>import    :8200</strong>
-  │              ├─ <strong><a href="https://github.com/FMI-MediaMaster/Steam-Import-Service">steam</a>       :8201</strong>
-  │              ├─ <strong><a href="https://github.com/FMI-MediaMaster/Goodreads-Import-Service">goodreads</a>   :8202</strong>
-  │              ├─ <strong><a href="https://github.com/FMI-MediaMaster/Trakt-Import-Service">trakt</a>       :8203</strong>
-  │              └─ <strong><a href="https://github.com/FMI-MediaMaster/MyAnimeList-Import-Service">myanimelist</a> :8204</strong>
+  │         ├─ <strong>8100: metadata</strong>
+  │         │    ├─ <strong>8101: <a href="https://github.com/FMI-MediaMaster/IGDB-Service">The Internet Game Database</a></strong>
+  │         │    ├─ <strong>8102: <a href="https://github.com/FMI-MediaMaster/HLTB-Service">HowLongToBeat</a></strong>
+  │         │    ├─ <strong>8103: <a href="https://github.com/FMI-MediaMaster/PCGW-Service">PCGamingWiki</a></strong>
+  │         │    ├─ <strong>8104: <a href="https://github.com/FMI-MediaMaster/Hardcover-Service">Hardcover</a></strong>
+  │         │    ├─ <strong>8105: <a href="https://github.com/FMI-MediaMaster/TMDB-Service">The Movie Database</a></strong>
+  │         │    └─ <strong>8106: <a href="https://github.com/FMI-MediaMaster/Anilist-Service">Anilist</a></strong>
+  │         └─ <strong>8200: import</strong>
+  │              ├─ <strong>8201: <a href="https://github.com/FMI-MediaMaster/Steam-Import-Service">Steam</a></strong>
+  │              ├─ <strong>8202: TODO (books)</strong>
+  │              ├─ <strong>8203: <a href="https://github.com/FMI-MediaMaster/Trakt-Import-Service">Trakt</a></strong>
+  │              └─ <strong>8204: <a href="https://github.com/FMI-MediaMaster/MAL-Import-Service">MyAnimeList</a></strong>
   └─ frontend
 </pre>
 
