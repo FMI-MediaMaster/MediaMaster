@@ -28,3 +28,6 @@
 [submodule "backend/external-services/import/mal"]
 	path = backend/external-services/import/mal
 	url = https://github.com/FMI-MediaMaster/MAL-Import-Service.git
+[submodule "backend/media-service"]
+	path = backend/media-service
+	url = https://github.com/FMI-MediaMaster/Media-Service.git
