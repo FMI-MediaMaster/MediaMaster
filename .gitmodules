@@ -28,6 +28,3 @@
 [submodule "backend/external-services/metadata/hltb"]
 	path = backend/external-services/metadata/hltb
 	url = https://github.com/FMI-MediaMaster/HLTB-Service
-[submodule "backend/external-services/metadata/igdb"]
-	path = backend/external-services/metadata/igdb
-	url = https://github.com/FMI-MediaMaster/IGDB-Service
