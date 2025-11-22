@@ -13,9 +13,6 @@
 [submodule "backend/external-services/metadata/hardcover"]
 	path = backend/external-services/metadata/hardcover
 	url = https://github.com/FMI-MediaMaster/Hardcover-Service.git
-[submodule "backend/external-services/metadata/igdb"]
-	path = backend/external-services/metadata/igdb
-	url = https://github.com/FMI-MediaMaster/HLTB-Service.git
 [submodule "backend/external-services/import/steam"]
 	path = backend/external-services/import/steam
 	url = https://github.com/FMI-MediaMaster/Steam-Import-Service.git
@@ -31,3 +28,6 @@
 [submodule "backend/external-services/metadata/hltb"]
 	path = backend/external-services/metadata/hltb
 	url = https://github.com/FMI-MediaMaster/HLTB-Service
+[submodule "backend/external-services/metadata/igdb"]
+	path = backend/external-services/metadata/igdb
+	url = https://github.com/FMI-MediaMaster/IGDB-Service
