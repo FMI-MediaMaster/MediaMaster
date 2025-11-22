@@ -1,18 +1,27 @@
 [submodule "backend/user-service"]
 	path = backend/user-service
 	url = https://github.com/FMI-MediaMaster/User-Service
-[submodule "backend/external-services/metadata/tmdb"]
-	path = backend/external-services/metadata/tmdb
-	url = https://github.com/FMI-MediaMaster/TMDB-Service.git
-[submodule "backend/external-services/metadata/anilist"]
-	path = backend/external-services/metadata/anilist
-	url = https://github.com/FMI-MediaMaster/Anilist-Service.git
+[submodule "backend/media-service"]
+	path = backend/media-service
+	url = https://github.com/FMI-MediaMaster/Media-Service.git
+[submodule "backend/external-services/metadata/igdb"]
+	path = backend/external-services/metadata/igdb
+	url = https://github.com/FMI-MediaMaster/IGDB-Service.git
+[submodule "backend/external-services/metadata/hltb"]
+	path = backend/external-services/metadata/hltb
+	url = https://github.com/FMI-MediaMaster/HLTB-Service
 [submodule "backend/external-services/metadata/pcgw"]
 	path = backend/external-services/metadata/pcgw
 	url = https://github.com/FMI-MediaMaster/PCGW-Service.git
 [submodule "backend/external-services/metadata/hardcover"]
 	path = backend/external-services/metadata/hardcover
 	url = https://github.com/FMI-MediaMaster/Hardcover-Service.git
+[submodule "backend/external-services/metadata/tmdb"]
+	path = backend/external-services/metadata/tmdb
+	url = https://github.com/FMI-MediaMaster/TMDB-Service.git
+[submodule "backend/external-services/metadata/anilist"]
+	path = backend/external-services/metadata/anilist
+	url = https://github.com/FMI-MediaMaster/Anilist-Service.git
 [submodule "backend/external-services/import/steam"]
 	path = backend/external-services/import/steam
 	url = https://github.com/FMI-MediaMaster/Steam-Import-Service.git
@@ -22,9 +31,3 @@
 [submodule "backend/external-services/import/mal"]
 	path = backend/external-services/import/mal
 	url = https://github.com/FMI-MediaMaster/MAL-Import-Service.git
-[submodule "backend/media-service"]
-	path = backend/media-service
-	url = https://github.com/FMI-MediaMaster/Media-Service.git
-[submodule "backend/external-services/metadata/hltb"]
-	path = backend/external-services/metadata/hltb
-	url = https://github.com/FMI-MediaMaster/HLTB-Service
