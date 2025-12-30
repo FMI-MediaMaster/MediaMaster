@@ -2,7 +2,7 @@ services:
   nginx:
     restart: always
     image: nginx:latest
-    container_name: nginx
+    container_name: nginx.mediamaster.internal
     hostname: nginx.mediamaster.internal
     volumes:
       - "./conf:/etc/nginx/conf.d"

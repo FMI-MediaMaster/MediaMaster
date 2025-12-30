@@ -26,3 +26,15 @@ Media Master
 ```sh
 git clone --recurse-submodules https://github.com/FMI-MediaMaster/MediaMaster.git
 ```
+
+2. Add .env for each service
+```sh
+cd backend/<path-to-service>
+cp .env.example .env  # fill the ones between <>
+```
+
+3. Start the server
+```sh
+cd backend
+devbox run compose:up
+```
