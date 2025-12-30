@@ -1,0 +1,16 @@
+services:
+  nginx:
+    restart: always
+    image: nginx:latest
+    container_name: nginx
+    hostname: nginx.mediamaster.internal
+    volumes:
+      - "./conf:/etc/nginx/conf.d"
+    ports:
+      - "8000:8000"
+    networks:
+      - mediamaster-internal-network
+
+networks:
+  mediamaster-internal-network:
+    name: mediamaster-internal-network
