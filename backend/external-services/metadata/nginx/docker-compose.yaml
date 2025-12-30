@@ -1,13 +1,13 @@
 services:
-  nginx:
+  metadata-service:
     restart: always
     image: nginx:latest
-    container_name: nginx.mediamaster.internal
-    hostname: nginx.mediamaster.internal
+    container_name: metadata-service.mediamaster.internal
+    hostname: metadata-service.mediamaster.internal
     volumes:
       - "./default.conf:/etc/nginx/conf.d/default.conf"
     ports:
-      - "8000:8000"
+      - "8100:8100"
     networks:
       - mediamaster-internal-network
 

@@ -1,0 +1,80 @@
+services:
+  # standalone services
+  user-service:
+    restart: always
+    extends:
+      service: user-service
+      file: ./user-service/docker-compose.yaml
+
+  media-service:
+    restart: always
+    extends:
+      service: media-service
+      file: ./media-service/docker-compose.yaml
+
+  # metadata services
+  igdb-service:
+    restart: always
+    extends:
+      service: igdb-service
+      file: ./external-services/metadata/igdb/docker-compose.yaml
+
+  hltb-service:
+    restart: always
+    extends:
+      service: hltb-service
+      file: ./external-services/metadata/hltb/docker-compose.yaml
+
+  pcgw-service:
+    restart: always
+    extends:
+      service: pcgw-service
+      file: ./external-services/metadata/pcgw/docker-compose.yaml
+
+  hardcover-service:
+    restart: always
+    extends:
+      service: hardcover-service
+      file: ./external-services/metadata/hardcover/docker-compose.yaml
+
+  tmdb-service:
+    restart: always
+    extends:
+      service: tmdb-service
+      file: ./external-services/metadata/tmdb/docker-compose.yaml
+
+  anilist-service:
+    restart: always
+    extends:
+      service: anilist-service
+      file: ./external-services/metadata/anilist/docker-compose.yaml
+
+  metadata-service:
+    restart: always
+    depends_on:
+      - igdb-service
+      - hltb-service
+      - pcgw-service
+      - hardcover-service
+      - tmdb-service
+      - anilist-service
+    extends:
+      service: metadata-service
+      file: ./external-services/metadata/nginx/docker-compose.yaml
+
+  # TODO: import services
+
+  # main nginx
+  nginx:
+    restart: always
+    depends_on:
+      - user-service
+      - media-service
+      - metadata-service
+    extends:
+      service: nginx
+      file: ./nginx/docker-compose.yaml
+
+networks:
+  mediamaster-internal-network:
+    name: mediamaster-internal-network
