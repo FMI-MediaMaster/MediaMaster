@@ -51,6 +51,9 @@ services:
 
   metadata-service:
     restart: always
+    image: nginx:latest
+    container_name: metadata-service.mediamaster.internal
+    hostname: metadata-service.mediamaster.internal
     depends_on:
       - igdb-service
       - hltb-service
@@ -58,22 +61,72 @@ services:
       - hardcover-service
       - tmdb-service
       - anilist-service
-    extends:
-      service: metadata-service
-      file: ./external-services/metadata/nginx/docker-compose.yaml
+    volumes:
+      - "./external-services/metadata/nginx.conf:/etc/nginx/conf.d/default.conf"
+    ports:
+      - "8100:8100"
+    networks:
+      - mediamaster-internal-network
 
-  # TODO: import services
-
-  # main nginx
-  nginx:
+  # import services
+  steam-import-service:
     restart: always
+    extends:
+      service: steam-import-service
+      file: ./external-services/import/steam/docker-compose.yaml
+
+  hardcover-import-service:
+    restart: always
+    extends:
+      service: hardcover-import-service
+      file: ./external-services/import/hardcover/docker-compose.yaml
+
+  trakt-import-service:
+    restart: always
+    extends:
+      service: trakt-import-service
+      file: ./external-services/import/trakt/docker-compose.yaml
+
+  mal-import-service:
+    restart: always
+    extends:
+      service: mal-import-service
+      file: ./external-services/import/mal/docker-compose.yaml
+
+  import-service:
+    restart: always
+    image: nginx:latest
+    container_name: import-service.mediamaster.internal
+    hostname: import-service.mediamaster.internal
+    depends_on:
+      - steam-import-service
+      - hardcover-import-service
+      - trakt-import-service
+      - mal-import-service
+    volumes:
+      - "./external-services/import/nginx.conf:/etc/nginx/conf.d/default.conf"
+    ports:
+      - "8200:8200"
+    networks:
+      - mediamaster-internal-network
+
+  # backend
+  backend:
+    restart: always
+    image: nginx:latest
+    container_name: nginx.mediamaster.internal
+    hostname: nginx.mediamaster.internal
     depends_on:
       - user-service
       - media-service
       - metadata-service
-    extends:
-      service: nginx
-      file: ./nginx/docker-compose.yaml
+      - import-service
+    volumes:
+      - "./nginx.conf:/etc/nginx/conf.d/default.conf"
+    ports:
+      - "8000:8000"
+    networks:
+      - mediamaster-internal-network
 
 networks:
   mediamaster-internal-network:

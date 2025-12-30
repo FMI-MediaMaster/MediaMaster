@@ -3,7 +3,7 @@
   "packages": ["docker@28.4.0"],
   "shell": {
     "scripts": {
-      "compose:up": "docker compose up -d nginx",
+      "compose:up": "docker compose up -d backend",
       "compose:down": "docker compose down"
     }
   }
