@@ -15,7 +15,7 @@ Media Master
   │         │    └─ <strong>8106: <a href="https://github.com/FMI-MediaMaster/Anilist-Service">Anilist</a></strong>
   │         └─ <strong>8200: import</strong>
   │              ├─ <strong>8201: <a href="https://github.com/FMI-MediaMaster/Steam-Import-Service">Steam</a></strong>
-  │              ├─ <strong>8202: TODO (books)</strong>
+  │              ├─ <strong>8202: <a href="https://github.com/FMI-MediaMaster/Hardcover-Import-Service">Hardcover</a></strong>
   │              ├─ <strong>8203: <a href="https://github.com/FMI-MediaMaster/Trakt-Import-Service">Trakt</a></strong>
   │              └─ <strong>8204: <a href="https://github.com/FMI-MediaMaster/MAL-Import-Service">MyAnimeList</a></strong>
   └─ frontend
@@ -37,4 +37,10 @@ cp .env.example .env  # fill the ones between <>
 ```sh
 cd backend
 devbox run compose:up
+```
+
+4. Stop the server
+```sh
+cd backend
+devbox run compose:down
 ```
